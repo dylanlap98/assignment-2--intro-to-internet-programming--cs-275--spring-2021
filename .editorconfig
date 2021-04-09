@@ -18,3 +18,4 @@ indent_size = 4
 [*.{md,diff}]
 trim_trailing_whitespace = false
 indent_size = 4
+
