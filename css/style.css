@@ -2,4 +2,56 @@ body {
   background-color: white;
 }
 
+.header{
+  display: block;
+  text-align: center;
+  background-color: grey;
+}
 
+.main-content{
+  display: flex;
+  color: white;
+  /*border: 1px dotted red;*/
+  width: 70%;
+  padding: 2%;
+  padding-bottom: 0%;
+  box-sizing: border-box;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paragraph{
+  padding: 50px;
+  margin: 15px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5%;
+}
+
+.button-1 {
+  background-color: #4C878F;
+}
+
+.button-2 {
+  background-color: #414C4E;
+}
+
+.button{
+
+}
+
+@media screen and (max-width: 900px){
+  .main-content{
+    flex-direction: column;
+  }
+}
+
+.sprouted-california-rice p{
+  display: flex;
+}
+
+.white-rice p{
+  display: flex;
+}
