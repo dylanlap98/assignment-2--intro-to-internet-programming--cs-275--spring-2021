@@ -27,7 +27,8 @@ let lintCSS = () => {
             reporters: [
                 {formatter: `verbose`, console: true}
             ]
-        }));
+        }))
+        .pipe(dest(`prod/`));
 };
 
 let lintJS = () => {
@@ -51,7 +52,8 @@ let lintJS = () => {
             },
             extends: `eslint:recommended`
         }))
-        .pipe(jsLinter.formatEach(`compact`, process.stderr));
+        .pipe(jsLinter.formatEach(`compact`, process.stderr))
+        .pipe(dest(`prod/`));
 };
 
 let serve = () => {
