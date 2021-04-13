@@ -64,6 +64,7 @@ let serve = () => {
             baseDir: [
                 `html`,
                 `css`,
+                'js',
             ]
         }
     });
