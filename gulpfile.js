@@ -87,3 +87,4 @@ exports.compressHTML = compressHTML;
 exports.lintCSS = lintCSS;
 exports.lintJS = lintJS;
 exports.serve = series(lintJS, validateHTML, compressHTML, lintCSS, serve);
+exports.build = series(lintJS, compressHTML, lintCSS);
